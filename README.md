@@ -2,7 +2,7 @@
 
 Inaayos ko ang iba't ibang sukat ng screen para sa computer, laptop, at phone sa pamamagitan ng paggamit ng `@media queries` sa CSS. Ginawa ko itong responsive upang matiyak na maayos at magandang tingnan ang layout sa iba't ibang devices.
 
----
+--- https://johnvel27.github.io/Resume-Website-For-Cathy-VA-PrelimExam-MultiDev/
 
 ## 📝 Summary of Improvements
 
