@@ -1,0 +1,310 @@
+p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .skills-h1{
+    padding: 50px;
+    font-size: 50px;
+    word-wrap: break-word;
+    font-weight: bold;
+    color: white;
+    font-family: "Montserrat", serif;
+    text-shadow: 2px 2px 5px rgba(200, 200, 200, 0.5), 
+                 4px 4px 10px rgba(180, 180, 180, 0.4);
+    text-align: center;
+    
+  }
+
+  .progress-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon, text, and progress bar */
+    margin-bottom: 15px;
+  }
+  
+  .progress-item i {
+    font-size: 18px;
+    color: white; /* Adjust icon color */
+    width: 25px; /* Maintain alignment */
+    text-align: center;
+  }
+  
+  .progress-item p {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .align{
+    margin-left: 100px;
+  }
+
+  .text{
+    font-size: 30px;
+  }
+  .hello{
+    margin-bottom: 170px;
+  }
+
+  .home-h1{
+    font-size: 170px;
+    position: absolute;
+    margin-top: -200px;
+  }
+
+  .btn-resume{
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .col-right img {
+    max-width: 100%;  /* Ensures the image scales within its container */
+    height: 700px;     /* Maintains aspect ratio */
+    display: block;   /* Prevents extra spacing */
+    object-fit: cover; /* Ensures it covers the space properly */
+  }
+
+  .col-right .align{
+    margin-left: 20px;
+  }
+
+  .col-right .text{
+    font-size: 20px;
+    padding: 20px 0px;
+  }
+
+  .col-right-aboutpage{
+    padding: 100px;
+    text-align: left;
+  }
+
+  .col-right-aboutpage .text{
+    margin-top: 20px;
+  }
+
+  .about-h1{
+    font-size: 100px;
+  }
+
+ .black{
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+ }
+
+ .content{
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  padding: 30px;
+ }
+
+ .testimonial {
+  display: flex;
+  align-items: center;
+  max-width: 1100px; /* Adjust width as needed */
+  width: 100%; /* Make it responsive */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+  padding: 20px; /* Increased padding */
+  border-left: 5px solid #629584;
+  margin: 20px auto; /* Center it */
+  border-radius: 15px;
+  backdrop-filter: blur(12px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.25); /* 3D effect */
+  transition: transform 0.3s ease-in-out;
+  margin-top: 100px;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.testimonial img {
+  width: 80px; /* Adjust image size */
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* 3D depth */
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 18px; /* Slightly larger text */
+  color: #fff; /* White text for contrast */
+  margin: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Glow effect */
+  line-height: 1.5; /* Improve readability */
+}
+
+/* General Styles */
+.connect-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.connect-section h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+}
+
+.connect-section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Contact Info */
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+}
+
+/* Social Links */
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #0073b1; /* LinkedIn color */
+  transition: color 0.3s ease;
+}
+
+.social-links a:nth-child(2) { color: #1DA1F2; } /* Twitter */
+.social-links a:nth-child(3) { color: #1877F2; } /* Facebook */
+.social-links a:nth-child(4) { color: #D44638; } /* Email */
+
+.social-links a:hover {
+  color: #333;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background: #0073b1;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #005582;
+}
+
+
+/* Footer Styles */
+.footer {
+  background: #243642;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Social Media Icons */
+.footer-social a {
+  display: inline-block;
+  margin: 5px;
+  font-size: 24px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #00A8E8;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+.textsize{
+  font-size: 1vw;
+}
+
+
+
+
+
+
+
+
+
+  

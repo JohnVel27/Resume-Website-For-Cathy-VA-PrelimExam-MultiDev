@@ -1,0 +1,85 @@
+/* For this Project I will Use CSS grid layout. */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Homepage */
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(12, 1fr); 
+    height: 100vh;
+    background-color: #E2F1E7;
+}
+
+.col-left{
+    grid-row: span 12;
+    grid-column: span 5;
+    background-color: #387478;
+    align-content: center;
+    justify-items: flex-start;
+    
+}
+
+.col-right{
+    grid-row: span 12;
+    grid-column: span 6;
+    background-color: #629584;
+}
+
+/* End Homepage */
+
+/*Start AboutPage */
+.col-left-aboutpage{
+    grid-row: span 12;
+    grid-column: span 6;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.col-right-aboutpage{
+    grid-row: span 12;
+    grid-column: span 6;
+    background-color: #387478;
+    text-align: center;
+}
+
+.about-section{
+    background-color:#E2F1E7 ;
+}
+/*End AboutPage*/
+
+/*Start SkillPage*/
+
+.skills-section{
+    background-color: #629584;
+    display: block;
+}
+
+.skills-container{
+    grid-column: span 12;
+    grid-row: span 6;
+    background-color: #629584;
+}
+
+.progress-container{
+    grid-column: span 12;
+    grid-row: span 4;
+    background-color: #629584;
+}
+/*End SkillPage*/
+
+/*Start Hire-Section*/
+.hire-section{
+    background-color:#243642 ;
+}
+
+.container-hire{
+    grid-column: span 12;
+    grid-row: span 10;
+    background-color: #243642;
+}
+
+/*End Hire-Section*/
+

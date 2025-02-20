@@ -1,0 +1,214 @@
+/* Start Animation  Page*/
+.h1{
+  word-wrap: break-word;
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat", serif;
+  text-shadow: 4px 4px 0px #000, 
+               8px 8px 0px #333, 
+               12px 12px 10px rgba(0, 0, 0, 0.5);
+  animation: lightMove 3s infinite alternate ease-in-out;
+  text-align: center;
+}
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  
+  }
+  
+  /* Individual Skill Card */
+  .skill {
+    background: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 220px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 220px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  /* 3D Hover Effect */
+  .skill:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Icon Styling */
+  .skill i {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+  }
+
+  @keyframes lightMove {
+    0% { text-shadow: 4px 4px 0px #000, 8px 8px 0px #333, 12px 12px 10px rgba(0, 0, 0, 0.5); }
+    50% { text-shadow: 6px 6px 5px #000, 12px 12px 5px #444, 18px 18px 15px rgba(255, 255, 255, 0.3); }
+    100% { text-shadow: 4px 4px 0px #000, 8px 8px 0px #333, 12px 12px 10px rgba(0, 0, 0, 0.5); }
+  }
+
+  /* Progress Section Styling */
+.progresses {
+  background: rgba(255, 255, 255, 0.15); /* Transparent blur effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  max-width: 1340px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 250px;
+  margin-top: 20px;
+}
+
+/* Hover Effect for Progress Container */
+.progresses:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress bar container */
+.progress-bar {
+  flex: 4; /* Adjust width ratio between text and progress bar */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 15px;
+  position: relative;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Fill */
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+  transition: width 0.8s ease-in-out;
+}
+/* Text Styles */
+.text {
+  text-shadow: 2px 2px 5px rgba(200, 200, 200, 0.5), 
+               4px 4px 10px rgba(180, 180, 180, 0.4);
+}
+
+.btn-home {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 40px;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: inline-block; /* Ensures proper button alignment */
+  margin-top: 15px;
+  position: relative;
+}
+
+/* Light Animation Effect */
+.btn-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  transform: skewX(-25deg);
+  transition: left 0.5s ease-in-out;
+}
+
+/* Animate the light on hover */
+.btn-home:hover::before {
+  left: 150%;
+}
+
+/* Glow & Scale Effect on Hover */
+.btn-home:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transform: scale(1.08);
+}
+
+/* Click (Press) Effect */
+.btn-home:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Smooth Border Glow */
+.btn-home {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.hiresectioncol {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+}
+
+/* Individual reason Card */
+.reason {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 220px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+/* 3D Hover Effect */
+.reason:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon Styling */
+.reason i {
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+/*End Animation  Page*/

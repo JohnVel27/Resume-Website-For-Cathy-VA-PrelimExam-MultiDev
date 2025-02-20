@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy Virtual Assistant</title>
+
+    <!--My CSS Styles Start here-->
+    <link rel="stylesheet" href="styles/animation.css"> <!--Animation like buttons,text and others.-->
+    <link rel="stylesheet" href="styles/layout.css">    <!--CSS Grid layout-->
+    <link rel="stylesheet" href="styles/style.css">    <!--CSS about the sizes,colors,and for the alignment of the text,images and others.-->
+    <link rel="stylesheet" href="styles/responsive.css">  <!--Responsive Design-->
+    <link rel="stylesheet" href="styles/navbar.css">  <!--Navbar CSS-->
+    <!--My CSS Styles End Here-->
+
+    <!--Montserrat FontStyle and Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+
+    <!-- Open Button -->
+    <div class="menu-toggle" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Hidden Navbar -->
+    <nav class="navbar">
+        <a href="index.html" data-text="Home"><i class="fas fa-home"></i></a>
+        <a href="about.html" data-text="About"><i class="fas fa-user"></i></a>
+        <a href="skills.html" data-text="Skills & Experience"><i class="fas fa-cogs"></i></a>
+        <a href="hire.html" data-text="Why Hire Me"><i class="fas fa-briefcase"></i></a>
+        <a href="contact.html" data-text="Contact"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <!-- Start Homepage -->
+    <section id="home" class="home">
+        <div class="container home-section">
+            <div class="col-left">
+                <p class="align text hello">Hello</p>
+                <h1 class="align h1 home-h1">I'm Cathy</h1>
+                <p class="align text">Your Reliable Virtual Assistant –</p>
+                <p class="align text">Helping You Stay Organized and</p>
+                <p class="align text">Productive</p>
+                <button class="align btn-home">HIRE ME</button>
+            </div>
+            <div class="col-right">
+                <img src="images/Cathy.jpg" alt="Cathy - Virtual Assistant">
+                <p class="align text textright">After 4 years of excelling as a customer service representative, I’m transitioning into the world of virtual assistance. My experience in communication, problem-solving, and time management has prepared me to support businesses remotely. Whether you need help with scheduling, email management, or administrative tasks, I’m here to make your life easier and your business more productive.</p>
+                <button class="align btn-home btn-resume">View Resume</button>
+            </div>
+        </div>
+    </section>
+    <!-- End Homepage -->
+
+    <!-- Start Aboutpage -->
+    <section id="about" class="about">
+        <div class="container about-section">
+            <div class="col-left-aboutpage">
+                <img class="mom-img" src="images/Momwork.jpg" alt="Cathy - Virtual Assistant">
+                <p class="text black white">I’m currently enhancing my knowledge by taking online courses in tools like Google Workspace, Trello, and Asana to ensure I’m fully equipped to support your business needs.</p>
+                <p class="text black white">I’m excited to bring my dedication, reliability, and enthusiasm to your team!</p>
+            </div>
+            <div class="col-right-aboutpage">
+                <h1 class="h1 about-h1">About me</h1>
+                <p class="text white textsize">I’m a mom of two from Cavite, Philippines, with a passion for helping others and a drive to create a better work-life balance. For the past 4 years, I’ve worked as a customer service representative in a fast-paced environment, where I honed my skills in communication, organization, and problem-solving.</p>
+                <p class="text white textsize">However, the long commute and demanding schedule started to take a toll on my health and time with my family. That’s when I discovered the world of virtual assistance—a career that allows me to use my skills while working remotely and spending more time with my kids.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Aboutpage -->
+
+    <!--Start Skillpage-->
+
+    <section id = "skills-section" class="skills-section">
+                <div class="container skills-section">
+                    <div class="skills-container">
+                        <h1 class="skills-h1">What I Bring to the Table</h1>
+                        <p class="content">With 4 years of experience as a customer service representative, I’ve developed a strong skill set that translates perfectly into virtual assistance. Here’s how I can help you:</p>
+                        <div class="skills">
+                            <div class="skill">
+                                <i class="fas fa-comments"></i>
+                                <h3>Communication</h3>
+                                <p>Responding to emails, managing client inquiries, and coordinating schedules.</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h3>Organization</h3>
+                                <p>Managing multiple tasks, prioritizing deadlines, and keeping everything on track.</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-lightbulb"></i>
+                                <h3>Problem-Solving</h3>
+                                <p>Thriving in fast-paced environments and finding quick solutions to challenges.</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-laptop"></i>
+                                <h3>Tech Proficiency</h3>
+                                <p>Experienced with Microsoft Office, Google Workspace, and CRM software.</p>
+                            </div>
+                            <div class="skill">
+                                <i class="fas fa-users"></i>
+                                <h3>Customer Focus</h3>
+                                <p>Building strong relationships and ensuring client satisfaction.</p>
+                            </div>
+                        </div>
+                        <p class="content">I’m also currently learning project management tools like Trello and Asana to further enhance my capabilities as a virtual assistant</p>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progresses">
+                            <div class="progress-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>Google Workspace</p>
+                                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="progress-item">
+                                <i class="fas fa-file-word"></i>
+                                <p>Microsoft Office</p>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="progress-item">
+                                <i class="fas fa-chart-line"></i>
+                                <p>CRM Software</p>
+                                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="progress-item">
+                                <i class="fas fa-tasks"></i>
+                                <p>Trello</p>
+                                <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                            </div>
+                            <div class="progress-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <p>Asana</p>
+                                <div class="progress-bar"><div class="progress" style="width: 55%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    <!--End Skillpage-->
+
+    <!--Hire Section Start-->
+    <section id="hire-section" class="hire-section">
+        <div class="container hire-section">
+            <div class="container-hire">
+                <h1 class="skills-h1">Why Choose Me as Your Virtual Assistant?</h1>
+                <p class="content">Although I’m new to the virtual assistant field, my customer service background has given me a strong foundation in skills that are directly applicable to this role.</p>
+            <div class="hiresectioncol">
+                    <div class="reason">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Quick Learner</h3>
+                        <p>I’m proactive about learning new tools and processes to ensure I can support you effectively.</p>
+                    </div>
+                    <div class="reason">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Reliable and Trustworthy</h3>
+                        <p>I understand the importance of dependability in remote work, and I’m committed to meeting your expectations.</p>
+                    </div>
+                    <div class="reason">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Strong Work Ethic</h3>
+                        <p>I take pride in delivering high-quality work and going above and beyond to help you succeed.</p>
+                    </div>
+                    <div class="reason">
+                        <i class="fas fa-users"></i>
+                        <h3>Customer-Centric Mindset</h3>
+                        <p>My experience in customer service has taught me how to anticipate needs and provide exceptional support.</p>
+                    </div>
+                            
+                </div>
+                <div class="testimonial">
+                    <img src="images/abduljabar.webp" alt="Testimonial Image">
+                    <p class="cathtext">“Cathy is one of the most dedicated and reliable professionals I’ve worked with. She always goes the extra mile to ensure everything runs smoothly.” – Former Supervisor Abdul Jabar Umali </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Hire Section End-->
+
+     <!--Contact Start-->
+
+     <section id="connect-section" class="connect-section">
+        <h2>Let’s Connect!</h2>
+        <p>I’d love to hear from you! Whether you have a question or want to discuss how I can support your business, feel free to reach out. Let’s work together to make your life easier and your business more productive.</p>
+        
+        <div class="contact-info">
+            <p><strong>Email:</strong> cathy.delacruz@example.com</p>
+            <p><strong>Phone:</strong> +63 123 456 7890</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:cathy.delacruz@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+        
+        <div class="contact-form">
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!--Contact End-->
+
+    <!--Footer Start here-->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About This Website</h3>
+                <p>This website was designed para makapag pasa ako ng multi dev ko :<. Hayst Tapos na din :))))!</p>
+            </div>
+    
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> johnvelllacuna@gmail.com</p>
+                <p><strong>Phone:</strong> +63 921 717 2766</p>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Follow Me</h3>
+                <a href="https://www.linkedin.com/in/john-vel-llacuna-93011630b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/john-vel-llacuna-93011630b/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/johnvel.vel27" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="mailto:johnvelllacuna@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p><span id="displayYear"></span> VelDevX. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!--Footer End here-->
+
+
+
+
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/script.js"></script>
+
+</html>

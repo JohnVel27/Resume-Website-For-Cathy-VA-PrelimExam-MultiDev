@@ -1,0 +1,110 @@
+/* Penetrating (Transparent) Navbar */
+.navbar {
+  position: fixed;
+  top: 35%;
+  right: -120px; /* Hidden by default */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect with transparency */
+  backdrop-filter: blur(10px);
+  border-radius: 15px 0 0 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  transition: right 0.4s ease-in-out;
+  z-index: 10; /* Ensure navbar is above content */
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Show navbar */
+.navbar.show {
+  right: 10px; /* Navbar appears */
+}
+
+/* Navbar Icons */
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #243642, #1a2b30);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  pointer-events: auto; /* Enable clicks on icons */
+}
+
+/* Icon Hover Effect */
+.navbar a:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Tooltip (Icon Text - Left Side) */
+.navbar a::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  right: 60px; /* Adjust distance from icon */
+  transform: translateY(-50%);
+  background: radial-gradient(circle, #243642, #1a2b30);
+  color: white;
+  font-size: 14px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show Tooltip on Hover (Left Side) */
+.navbar a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(-5px);
+}
+
+/* Open Button */
+.menu-toggle {
+  position: fixed;
+  top: 5%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: radial-gradient(circle, rgba(36, 54, 66, 0.8), #243642);
+  animation: pulseBackground 10s infinite alternate;
+  border-radius: 50%;
+  padding: 30px;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(255, 255, 255, 0.1);
+  pointer-events: auto; /* Enable clicks on toggle */
+}
+
+@keyframes pulseBackground {
+  0% {
+      background-size: 100%;
+  }
+  100% {
+      background-size: 120%;
+  }
+}
+
+.menu-toggle i {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover i {
+  transform: rotate(90deg); /* Rotate icon on hover */
+}
+
+
+
