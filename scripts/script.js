@@ -18,3 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
         menuToggle.classList.replace("fa-times", "fa-bars");
     }
 }
+
+function viewResume() {
+      // Redirect to resume.html
+      window.location.href = "resume.html";
+    }
